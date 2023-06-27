@@ -210,4 +210,7 @@ export const data = {
 };
 
 
-console.log( data.planets.filter(name => name.moons).map(year => year.name));
+
+let moon = data.planets.map(obj => obj.moons)
+
+console.log(moon.length);
